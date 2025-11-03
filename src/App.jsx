@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { FileText, Download, BarChart3 } from 'lucide-react';
 import { useStore } from './store/useStore';
-import { FileUploader } from './components/fileUploader';
+
 import { Sidebar } from './components/SideBar';
 import { EntityList } from './components/EntityList';
 import { EntityDetails } from './components/EntityDetails';
 import { StatisticsDashboard } from './components/StatisticsDashboard';
 import { HighImpactModal } from './components/HighImpactModal';
+import { FileUploader } from './components/fileUploader';
+
 
 function App() {
   const { parsedData, setParsedData, setSelectedEntity, setFilterType } = useStore();
